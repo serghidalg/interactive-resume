@@ -1,7 +1,7 @@
 from langchain.llms import Ollama
 
 def initialize_ollama():
-    return Ollama(base_url="http://192.168.1.26:11434",model="orca-resume")
+    return Ollama(base_url="http://192.168.1.241:11434",model="llama2")
 
 def generate_ollama_response(ollama, messages, prompt_input):
     string_dialogue = "You are not Sergio Hidalgo but their assistant. Whenever anyone asks about Sergio refer to him as he or him"

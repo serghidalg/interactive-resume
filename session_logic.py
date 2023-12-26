@@ -23,7 +23,7 @@ def generate_response_if_needed(ollama, messages, prompt):
             for char in response:  # Assume response is a string
                 full_response += char
                 placeholder.markdown(full_response)
-                time.sleep(0.05)  # Adjust the delay as needed
+                time.sleep(0.005)  # Adjust the delay as needed
         message = {"role": "assistant", "content": full_response}
         messages.append(message)
 
