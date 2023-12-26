@@ -22,7 +22,7 @@ To run the project locally, follow these steps:
 2. **Install Dependencies:**
    ```bash
    cd interactive-resume
-pip install -r requirements.txt
+   pip install -r requirements.txt
    ```
 3. **Run the Application:**
    ```bash
