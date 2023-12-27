@@ -11,8 +11,6 @@ def clear_chat_history(messages):
 def handle_user_input(messages, prompt):
     if prompt:
         messages.append({"role": "user", "content": prompt})
-        #with st.chat_message("user"):
-            #st.write(prompt)
 
 def generate_response_if_needed(ollama, messages, prompt):
     if messages[-1]["role"] != "assistant":

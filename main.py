@@ -24,5 +24,4 @@ ui.display_messages(st.session_state.messages)
 
 session_logic.generate_response_if_needed(ollama, st.session_state.messages, prompt)
 
-#ui.display_messages(st.session_state.messages)
 
