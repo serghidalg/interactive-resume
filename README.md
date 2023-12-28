@@ -1,6 +1,6 @@
 # Interactive Resume with Streamlit and Ollama
 
-![Test AI interview](files/interactive-resume1.png)
+![Test AI interview](files/interactive-resume.gif)
 
 ## Overview
 
