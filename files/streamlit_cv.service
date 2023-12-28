@@ -1,0 +1,12 @@
+[Unit]
+Description=Streamlit CV Service
+After=network-online.target
+
+[Service]
+WorkingDirectory=YOURFOLDER/interactive-resume
+ExecStart=YOURFOLDER/interactive-resume/venv/bin/streamlit run YOURFOLDER/interactive-resume/main.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
