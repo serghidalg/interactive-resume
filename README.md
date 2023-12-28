@@ -1,5 +1,7 @@
 # Interactive Resume with Streamlit and Ollama
 
+![Test AI interview](./files/interactive-resume1.png)
+
 ## Overview
 
 This project aims to create an interactive resume using Streamlit, a Python library for building web applications, and Ollama, a language model for conversational AI. The interactive resume allows users to engage in a conversation with an AI assistant to learn more about a person's qualifications, experience, and other relevant information typically found in a resume.
@@ -50,3 +52,4 @@ Please note that certain sections of this project might need customization to su
 
 4. *ui.py*: Holds my personal info so the interviewers can know more about my work.
 
+![Test 2 AI interview](./files/interactive-resume2.png)
