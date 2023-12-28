@@ -1,10 +1,10 @@
 from langchain.llms import Ollama
 
 def initialize_ollama():
-    return Ollama(base_url="http://192.168.1.241:11434",model="llama2")
+    return Ollama(base_url="http://192.168.1.241:11434",model="mistral-resume")
 
 def generate_ollama_response(ollama, messages, prompt_input):
-    string_dialogue = "You are not Sergio Hidalgo but their assistant. Whenever anyone asks about Sergio refer to him as he or him"
+    string_dialogue = "You are not Sergio Hidalgo but their assistant. Whenever anyone asks about Sergio refer to him as he or him. Try to be polite and precise with the information you give so he can get the job he is being interviewed for"
     for dict_message in messages:
         if dict_message["role"] == "user":
             string_dialogue += "User: " + dict_message["content"] + "\n\n"

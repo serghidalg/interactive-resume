@@ -6,7 +6,7 @@ import ollama_handler
 
 def clear_chat_history(messages):
     messages.clear()
-    messages.append({"role": "assistant", "content": "What do you want to know about Sergio Hidalgo?"})
+    messages.append({"role": "assistant", "content": "Hey! I am Sergio's assistant. What would you like to know about his qualifications?"})
 
 def handle_user_input(messages, prompt):
     if prompt:
