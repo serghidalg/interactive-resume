@@ -24,7 +24,10 @@ To run the project locally, follow these steps:
    cd interactive-resume
    pip install -r requirements.txt
    ```
-3. **Run the Application:**
+
+3. **Read the "Customization Guide" below**
+
+4. **Run the Application:**
    ```bash
    streamlit run main.py
    ```
@@ -37,4 +40,13 @@ To run the project locally, follow these steps:
 - Users can input questions or prompts in the chat input area.
 - The AI assistant (powered by Ollama) will respond to user queries, creating an interactive conversation.
 
+## Customization Guide:
+Please note that certain sections of this project might need customization to suit individual preferences or information. Here are the sections you might want to review and potentially modify:
+1. **Install Ollama server:** This project relies on you having a working ollama server working.
+
+2. *ollama_handler.py*: Points to a specific IP for your Ollama server and model name. It also sets some rules for the assistant to follow.
+
+3. *session_logic.py*: Contains specific information about the first prompt that the streamlit will show.
+
+4. *ui.py*: Holds my personal info so the interviewers can know more about my work.
 
