@@ -29,6 +29,8 @@ To run the project locally, follow these steps:
    streamlit run main.py
    ```
 
+*Note:* There is a streamlit_cv.service file which can be useful to some people in the files folder.
+
 ## Usage
 
 - Upon launching the application, you'll see a sidebar with relevant links and the conversation area.
