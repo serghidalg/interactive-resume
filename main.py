@@ -11,7 +11,7 @@ with st.sidebar:
 ollama = ollama_handler.initialize_ollama()
 
 if "messages" not in st.session_state.keys():
-    st.session_state.messages = [{"role": "assistant", "content": "What do you want to know about Sergio Hidalgo?"}]
+    st.session_state.messages = [{"role": "assistant", "content": "Hey! I am Sergio's assistant. What would you like to know about his qualifications?"}]
 
 if st.sidebar.button('Clear Chat History', on_click=lambda: session_logic.clear_chat_history(st.session_state.messages)):
     pass
