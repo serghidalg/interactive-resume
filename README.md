@@ -46,7 +46,7 @@ To run the project locally, follow these steps:
 Please note that certain sections of this project might need customization to suit individual preferences or information. Here are the sections you might want to review and potentially modify:
 1. **Install Ollama server:** This project relies on you having a working ollama server working.
 
-2. *ollama_handler.py*: Points to a specific IP for your Ollama server and model name. It also sets some rules for the assistant to follow.
+2. *ollama_handler.py*: Points to a specific IP for your Ollama server and model name. A second IP can be set as fallback. It also sets some rules for the assistant to follow.
 
 3. *session_logic.py*: Contains specific information about the first prompt that the streamlit will show.
 
