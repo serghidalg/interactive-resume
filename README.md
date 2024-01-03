@@ -22,7 +22,7 @@ This project aims to create an interactive resume using Streamlit, a Python libr
 
 #### Instructions:
 ```
-git clone https://github.com/serghidalg/interactive-resume && cd interactive-resume && ./install.sh
+git clone https://github.com/serghidalg/interactive-resume && cd interactive-resume && bash install.sh
 ```
 #### Run it:
 ```
