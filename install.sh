@@ -1,27 +1,26 @@
 #!/bin/bash
 
-
-#!/bin/bash
-
-# Verificar si python3 está instalado
+# Is python3 installed?
 if command -v python3 &>/dev/null; then
     python_executable="python3"
 elif command -v python &>/dev/null; then
     python_executable="python"
 else
-    echo "Python 3 no está instalado."
+    echo "Python 3 is not installed. Exiting."
     exit 1
 fi
 
-# Crear el entorno virtual
+# Creating virtual environment
 $python_executable -m venv venv
 
-# Activar el entorno virtual
+# Entering virtual environment
 source venv/bin/activate
 
-# Instalar los requisitos
+# Installing pip packages
 pip install -r requirements.txt
 
-# Ejecutar setup_variables.py
+# Running the setup of variables
 $python_executable setup_variables.py
 
+# Performing a test run :D
+streamlit run main.py
