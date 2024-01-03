@@ -13,6 +13,25 @@ This project aims to create an interactive resume using Streamlit, a Python libr
 - **Chat-Based Interaction:** Enables users to ask questions and receive responses in a conversational format.
 - **Clear and Informative:** Provides relevant links and information about the person whose resume is being presented.
 
+## Installation 
+### Linux
+#### Requirements:
+1. Python library accessible from terminal
+2. Python venv
+3. Python pip
+
+#### Instructions:
+```
+git clone https://github.com/serghidalg/interactive-resume && cd interactive-resume && ./install.sh
+```
+#### Run it:
+```
+source venv/bin/activate
+streamlit run main.py
+```
+#### Web access
+Now everything should be accessible from 0.0.0.0:7860 on your web browser :D
+
 ## How to Run
 
 To run the project locally, follow these steps:

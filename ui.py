@@ -1,8 +1,9 @@
 import streamlit as st
+import variables
 
 def setup_sidebar():
     st.image("./files/serg_white_cut.png")
-    st.title("Sergio Hidalgo")
+    st.title(variables.name)
     st.subheader("Curriculum Vitae")
     st.markdown("Relevant links:")
     st.markdown("- [LinkedIn](https://www.linkedin.com/in/serghidalg/)")

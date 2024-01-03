@@ -3,10 +3,11 @@ import time
 #from ollama_handler import *
 #from ollama_handler import generate_ollama_response
 import ollama_handler
+import variables
 
 def clear_chat_history(messages):
     messages.clear()
-    messages.append({"role": "assistant", "content": "Hey! I am Sergio's assistant. What would you like to know about his qualifications?"})
+    messages.append({"role": "assistant", "content": variables.first_prompt})
 
 def handle_user_input(messages, prompt):
     if prompt:
