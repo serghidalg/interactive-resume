@@ -19,6 +19,7 @@ def variables_logic():
 
 def variables_personal():
     variables['name'] = input('Enter your full name: ')
+    variables['picture'] = input('Enter the location of a picture of yourself: ')
     variables['url_linkedin'] = input('Enter the link to your Linkedin profile: ')
     variables['url_github'] = input('Enter the link to your GitHub profile: ')
     variables['url_cv'] = input('Enter the link to your static CV: ')

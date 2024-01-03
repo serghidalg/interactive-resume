@@ -2,13 +2,13 @@ import streamlit as st
 import variables
 
 def setup_sidebar():
-    st.image("./files/serg_white_cut.png")
+    st.image(variables.picture)
     st.title(variables.name)
     st.subheader("Curriculum Vitae")
     st.markdown("Relevant links:")
-    st.markdown("- [LinkedIn](https://www.linkedin.com/in/serghidalg/)")
-    st.markdown("- [Github](https://www.github.com/serghidalg)")
-    st.markdown("- [CV](https://github.com/serghidalg/interactive-resume/blob/main/files/cv.pdf)")
+    st.markdown(f"- [LinkedIn]({variables.url_linkedin})")
+    st.markdown(f"- [Github]({variables.url_github})")
+    st.markdown(f"- [CV]({variables.url_cv})")
 
 def display_messages(messages):
     for message in messages:
