@@ -8,7 +8,7 @@ def initialize_ollama():
         response = requests.get(url)
     except:
         url = variables.url2
-    return Ollama(base_url=url,model="mistral-resume")
+    return Ollama(base_url=url,model=variables.model_name)
 
 def generate_ollama_response(ollama, messages, prompt_input):
     string_dialogue = variables.instructions

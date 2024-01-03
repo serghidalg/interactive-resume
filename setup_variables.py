@@ -5,12 +5,13 @@ import shutil
 # Only variables in this variable will be saved!
 variables = {}
 def variables_ollama():
-    variables['url'] = input('Enter your main Ollama URL: ')
+    variables['url'] = input('Enter your main Ollama URL (http://...): ')
     setup_url2 = input('Do you want to set up a secondary Ollama instance? (y/n): ')
     if setup_url2 in ('y', 'yes'):
-        variables['url2'] = input('Enter your secondary Ollama URL: ')
+        variables['url2'] = input('Enter your secondary Ollama URL (http://...): ')
     else:
         variables['url2'] = variables['url']
+    variables['model_name'] = input ('Enter the Ollama model name in both instances: ')
 
 def variables_logic():
     variables['instructions'] = input('What instructions do you want your assistant to follow: \n')
