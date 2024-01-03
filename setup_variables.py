@@ -31,13 +31,14 @@ def file_save_variables():
     with open('variables.py', 'w') as file:
         for variable, value in variables.items():
             if type(value) == str:
-                file.write(f"{variable} = '{value}'\n")
+                file.write(f'{variable} = "{value}"\n')
             else:
                 file.write(f"{variable} = {value}\n")
 
 print('#################################################################')
 print('You are starting the setup of your variables.py configuration :D')
 print('#################################################################')
+print('!!! Remember not to use the " character or the setup will fail !!!')
 print('\n## Configuring your personal information ##')
 variables_personal()
 print('\n## Configuring your Ollama server information ##')
