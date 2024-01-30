@@ -14,6 +14,24 @@ This project aims to create an interactive resume using Streamlit, a Python libr
 - **Clear and Informative:** Provides relevant links and information about the person whose resume is being presented.
 
 ## Installation 
+### Docker
+#### Requirements:
+1. Bash to set up variables
+2. Python for setup script
+3. Docker ;)
+#### Instructions:
+```
+git clone https://github.com/serghidalg/interactive-resume && cd interactive-resume && python setup_variables.py
+```
+#### Run it:
+##### With docker:
+```
+docker build -t interactive-resume .
+docker run -d -p 8501:8501 interactive-resume
+```
+
+
+
 ### Linux
 #### Requirements:
 1. Python library accessible from terminal
@@ -30,28 +48,7 @@ source venv/bin/activate
 streamlit run main.py
 ```
 #### Web access
-Now everything should be accessible from 0.0.0.0:7860 on your web browser :D
-
-## How to Run
-
-To run the project locally, follow these steps:
-
-1. **Clone the Repository:** 
-   ```bash
-   git clone https://github.com/yourusername/interactive-resume.git
-   ```
-2. **Install Dependencies:**
-   ```bash
-   cd interactive-resume
-   pip install -r requirements.txt
-   ```
-
-3. **Read the "Customization Guide" below**
-
-4. **Run the Application:**
-   ```bash
-   streamlit run main.py
-   ```
+Now everything should be accessible from 0.0.0.0:8501 on your web browser :D
 
 *Note:* There is a streamlit_cv.service file which can be useful to some people in the files folder.
 
