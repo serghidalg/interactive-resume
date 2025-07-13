@@ -18,5 +18,7 @@ def generate_ollama_response(ollama, messages, prompt_input):
         else:
             string_dialogue += "Assistant: " + dict_message["content"] + "\n\n"
     response = ollama.__call__(prompt=f"{string_dialogue} {prompt_input} Assistant: ")
+    # Should make interactive-resume not show the thinking steps
+    response = re.sub(r"<think>.*?</think>\n?", "", response, flags=re.DOTALL).strip()
     return response
 
